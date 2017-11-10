@@ -15,6 +15,8 @@
         -e "XMAGE_DOCKER_SERVER_ADDRESS=example.com" \
         xmage:latest
 
+    ### or just use run.sh ;)
+
 XMage needs to know the domain name the server is running on. The `--add-host` option adds an entry to the containers `/etc/hosts` file for this domain. Using the `XMAGE_*` environment variables you can modify the `config.xml` file.
 You should always set `XMAGE_DOCKER_SERVER_ADDRESS` to the same value as `--add-host`.
 
