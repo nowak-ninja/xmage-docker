@@ -30,3 +30,6 @@ For more informations on this topic  see: https://docs.docker.com/engine/referen
         -e "XMAGE_DOCKER_SERVER_ADDRESS=example.com" \
         -e "XMAGE_DOCKER_SERVER_NAME=test-server" \
         xmage:latest
+
+## Other server settings
+    Here: https://www.slightlymagic.net/forum/viewtopic.php?f=70&t=15898
