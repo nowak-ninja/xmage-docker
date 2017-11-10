@@ -32,4 +32,4 @@ For more informations on this topic  see: https://docs.docker.com/engine/referen
         xmage:latest
 
 ## Other server settings
-    Here: https://www.slightlymagic.net/forum/viewtopic.php?f=70&t=15898
+    Here: [https://www.slightlymagic.net/forum/viewtopic.php?f=70&t=15898]
