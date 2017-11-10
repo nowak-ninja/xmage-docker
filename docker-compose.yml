@@ -9,7 +9,7 @@ services:
          - "xmage.nowak.ninja:0.0.0.0"
         environment:
          - XMAGE_DOCKER_SERVER_ADDRESS=xmage.nowak.ninja
-         - XMAGE_DOCKER_SERVER_NAME="Magic Ninja"
+         - XMAGE_DOCKER_SERVER_NAME=Magic-Ninja
          - XMAGE_DOCKER_PORT=17171
          - XMAGE_DOCKER_SECONDARY_BIND_PORT=17179
          - XMAGE_DOCKER_AUTHENTICATION_ACTIVATED=false
