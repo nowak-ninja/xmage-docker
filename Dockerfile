@@ -15,8 +15,8 @@ RUN apt-get update && apt-get install -y software-properties-common \
 ENV JAVA_HOME=/usr/lib/jvm/java-8-oracle \
     XMAGE_DOCKER_SERVER_ADDRESS="0.0.0.0" \
     XMAGE_DOCKER_PORT="17171" \
-    XMAGE_DOCKER_SEONDARY_BIND_PORT="17179" \
-    XMAGE_DOCKER_SERVER_NAME="mage-server"
+    XMAGE_DOCKER_SECONDARY_BIND_PORT="17179" \
+    XMAGE_DOCKER_SERVER_NAME="xmage-server"
 
 WORKDIR /xmage
 
@@ -30,7 +30,7 @@ RUN chmod +x \
     /xmage/mage-server/startServer.sh \
     /xmage/mage-server/dockerStartServer.sh
 
-EXPOSE 17171 17179
+EXPOSE $XMAGE_DOCKER_PORT $XMAGE_DOCKER_SECONDARY_BIND_PORT
 
 WORKDIR /xmage/mage-server
 

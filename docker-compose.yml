@@ -10,8 +10,11 @@ services:
         environment:
          - XMAGE_DOCKER_SERVER_ADDRESS=xmage.nowak.ninja
          - XMAGE_DOCKER_SERVER_NAME="Magic Ninja"
-         - XMAGE_DOCKER_MAX_SECONDS_IDLE=6000
+         - XMAGE_DOCKER_PORT=17171
+         - XMAGE_DOCKER_SECONDARY_BIND_PORT=17179
          - XMAGE_DOCKER_AUTHENTICATION_ACTIVATED=false
+         - XMAGE_DOCKER_MAX_SECONDS_IDLE=6000
+         - XMAGE_DOCKER_MAX_AI_OPPONENTS=3
         volumes:
          - xmage-db:/opt/xmage/mage-server/db
          - xmage-saved:/opt/xmage/mage-server/saved
