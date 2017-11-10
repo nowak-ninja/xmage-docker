@@ -7,6 +7,4 @@ sed -i -e "s#\(serverName=\)[\"].*[\"]#\1\"$XMAGE_DOCKER_SERVER_NAME\"#g" ${XMAG
 sed -i -e "s#\(port=\)[\"].*[\"]#\1\"$XMAGE_DOCKER_PORT\"#g" ${XMAGE_CONFIG}
 sed -i -e "s#\(secondaryBindPort=\)[\"].*[\"]#\1\"$XMAGE_DOCKER_SEONDARY_BIND_PORT\"#g" ${XMAGE_CONFIG}
 
-cat /xmage/mage-server/startServer.sh
-
 bash /xmage/mage-server/startServer.sh
