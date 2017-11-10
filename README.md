@@ -19,7 +19,7 @@ XMage needs to know the domain name the server is running on. The `--add-host` o
 You should always set `XMAGE_DOCKER_SERVER_ADDRESS` to the same value as `--add-host`.
 
 You can limit the memory and CPU shares using the `-m` and `-c` options.   
-For more informations on this topic see: [https://docs.docker.com/engine/reference/run/#runtime-constraints-on-resources](https://docs.docker.com/engine/reference/run/#runtime-constraints-on-resources)
+For more informations on this topic see: https://docs.docker.com/engine/reference/run/#runtime-constraints-on-resources
 
     docker run --rm -it \
         -p 17171:17171 \
@@ -32,4 +32,4 @@ For more informations on this topic see: [https://docs.docker.com/engine/referen
         xmage:latest
 
 ## Other server settings
-    [https://www.slightlymagic.net/forum/viewtopic.php?f=70&t=15898](https://www.slightlymagic.net/forum/viewtopic.php?f=70&t=15898)
+    Here: https://www.slightlymagic.net/forum/viewtopic.php?f=70&t=15898
