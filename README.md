@@ -32,4 +32,8 @@ For more informations on this topic see: https://docs.docker.com/engine/referenc
         xmage:latest
 
 ## Other server settings
+<<<<<<< HEAD
     https://www.slightlymagic.net/forum/viewtopic.php?f=70&t=15898
+=======
+    Here: [https://www.slightlymagic.net/forum/viewtopic.php?f=70&t=15898]
+>>>>>>> 9a86d3e8b8fdaa6ce580ce59c18fd66e7de07692
