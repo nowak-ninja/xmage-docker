@@ -18,6 +18,7 @@ services:
         volumes:
          - xmage-db:/opt/xmage/mage-server/db
          - xmage-saved:/opt/xmage/mage-server/saved
+        restart: always
 volumes:
     xmage-db:
         driver: local
