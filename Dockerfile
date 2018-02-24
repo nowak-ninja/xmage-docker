@@ -1,4 +1,4 @@
-FROM ubuntu:14.04
+FROM ubuntu:16.04
 
 RUN apt-get update && apt-get install -y software-properties-common \
  && echo oracle-java8-installer shared/accepted-oracle-license-v1-1 select true | debconf-set-selections \
@@ -29,6 +29,9 @@ COPY *.sh /xmage/mage-server/
 RUN chmod +x \
     /xmage/mage-server/startServer.sh \
     /xmage/mage-server/dockerStartServer.sh
+
+RUN awk '{ sub("\r$", ""); print }' /xmage/mage-server/startServer.sh > /xmage/mage-server/startServer_unix.sh \
+   ; mv /xmage/mage-server/startServer_unix.sh /xmage/mage-server/startServer.sh
 
 EXPOSE $XMAGE_DOCKER_PORT $XMAGE_DOCKER_SECONDARY_BIND_PORT
 
