@@ -23,7 +23,7 @@ RUN curl http://xmage.de/xmage/config.json | jq '.XMage.location' | xargs curl -
   ; unzip xmage.zip \
   ; rm xmage.zip
 
-COPY *.sh /xmage/mage-server/
+COPY bin/*.sh /xmage/mage-server/
 
 RUN chmod +x \
     /xmage/mage-server/startServer.sh \
