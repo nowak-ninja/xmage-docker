@@ -2,11 +2,10 @@ FROM ubuntu:16.04
 
 RUN apt-get update && apt-get install -y software-properties-common \
  && echo oracle-java8-installer shared/accepted-oracle-license-v1-1 select true | debconf-set-selections \
- && add-apt-repository ppa:webupd8team/java \
  && apt-get update && apt-get install -y \
     curl \
     jq \
-    oracle-java8-installer \
+    default-jre \
     unzip \
  && apt-get clean \
  && rm -rf /var/lib/apt/lists/*
